@@ -1,4 +1,4 @@
-tomato is a simple pomodoro app for being productive and was made with autoit.
+tomato is a simple pomodoro app for being productive and was made with autoit.  
 tomato minimizes everything and then displays message boxes that tell you to either work on your task or take a break.
   
 tomato.au3 - autoit source code  
