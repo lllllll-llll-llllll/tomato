@@ -24,6 +24,7 @@ func study()
 	  msgbox(0, title(), "Break time is over. Please focus on your task now.")
    endif
 
+   TraySetToolTip(title() & " - Working on a task.")
    sleep($session)	; 25 minute focus session
    $fruit += 1		; add a fruit
 
@@ -33,6 +34,7 @@ endfunc
 func smallbreak()
    minimize()		; minimize everything
    msgbox(0, title(), "Tomato earned. Please take a small break.")
+   TraySetToolTip(title() & " - Taking a small break.")
    sleep($small)	; 5 minute break
 
    minimize()		; minimize everything
@@ -43,6 +45,7 @@ endfunc
 func bigbreak()
    minimize()		; minimize everything
    msgbox(0, title(), "Tomato earned. Please take a large break.")
+   TraySetToolTip(title() & " - Taking a large break.")
    sleep($large)	; 30 minute break
 
 endfunc
@@ -51,6 +54,7 @@ endfunc
 func restart()
    minimize()		; minimize everything
    $press = msgbox(4, title(), "Break time is over. Start a new session?")
+   TraySetToolTip()
    if $press = 7 then
 	  exit
    else
@@ -61,8 +65,9 @@ endfunc
 
 
 func title()
-   return string("Tomatoes: " & $fruit & "/4")
+   return string($fruit & "/4 Tomatoes")
 endfunc
+
 
 
 while true
