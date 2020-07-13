@@ -1,5 +1,5 @@
 tomato is a simple pomodoro app for being productive, made with autoit and so only works on windows.  
-tomato minimizes all windows and displays message boxes telling you to either work on a task or take a break.
+let tomato tell you when to work and take breaks.  
   
 tomato.au3 - autoit source code  
 tomato.ico - icon   
